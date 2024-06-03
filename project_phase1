@@ -1,0 +1,54 @@
+Instructor
+
+InstructorID (PK)
+Name
+Address
+Phone
+SSN
+PreferredLessons
+AvailableTimes
+Student
+
+StudentID (PK)
+Name
+Age
+Address
+Phone
+ParentID (FK, nullable)
+Parent
+
+ParentID (PK)
+Name
+Phone
+Address
+Lesson
+
+LessonID (PK)
+Instrument
+Level
+Price
+Time
+Duration
+Competition
+
+CompetitionID (PK)
+Name
+Date
+Rank
+Comments
+InstructorTeachesLesson
+
+InstructorID (FK)
+LessonID (FK)
+StudentRegistersLesson
+
+StudentID (FK)
+LessonID (FK)
+InstructorAccompaniesCompetition
+
+InstructorID (FK)
+CompetitionID (FK)
+StudentAttendsCompetition
+
+StudentID (FK)
+CompetitionID (FK)
